@@ -1,0 +1,1260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:scrollbars="none"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!--TopBar-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:padding="@dimen/medium">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:padding="7dp"
+                android:src="@drawable/menu_icon" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/wallet_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/light_blue"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:text="100"
+                    android:textColor="@color/white"
+                    android:textSize="12dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--LocationBar-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/medium">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:padding="4dp"
+                android:src="@drawable/ic_location_on_black_24dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:fontFamily="@font/ralewayregular"
+                android:text="Gwalior"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="@dimen/small"
+                android:padding="4dp"
+                android:src="@drawable/ic_keyboard_arrow_down_black_24dp" />
+        </LinearLayout>
+
+        <!--Line-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0.7dp"
+            android:layout_marginTop="10dp"
+            android:background="#C0C0C0" />
+
+        <!--Body-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:fontFamily="@font/ralewaybold"
+                android:paddingLeft="@dimen/medium"
+                android:paddingTop="@dimen/medium"
+                android:paddingRight="@dimen/medium"
+                android:text="What are you looking for?"
+                android:textColor="#363636"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/medium"
+                android:paddingTop="5dp"
+                android:paddingRight="@dimen/medium">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="@dimen/small"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="@dimen/small"
+                        app:cardCornerRadius="3dp"
+                        app:cardElevation="2dp">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:paddingLeft="@dimen/small"
+                                android:paddingTop="@dimen/small"
+                                android:paddingRight="80dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/ralewaybold"
+                                    android:text="Meet a doctor"
+                                    android:textColor="#363636"
+                                    android:textSize="14sp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:fontFamily="@font/ralewayregular"
+                                    android:text="Book Appointments"
+                                    android:textColor="#363636"
+                                    android:textSize="12sp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <Space
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1" />
+
+                                <ImageView
+                                    android:layout_width="80dp"
+                                    android:layout_height="120dp"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/doctor_img" />
+                            </LinearLayout>
+
+
+                        </RelativeLayout>
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="@dimen/small"
+                        android:paddingLeft="@dimen/small"
+                        app:cardCornerRadius="3dp"
+                        app:cardElevation="2dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/small"
+                            android:paddingTop="@dimen/small"
+                            android:paddingBottom="@dimen/small">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/ralewaybold"
+                                    android:text="Pharmacy"
+                                    android:textColor="#363636"
+                                    android:textSize="14sp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/medicines_health"
+                                    android:textColor="#363636"
+                                    android:textSize="12sp" />
+
+                            </LinearLayout>
+
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_marginLeft="@dimen/medium"
+                                android:padding="2dp"
+                                android:src="@drawable/pills" />
+                        </LinearLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2">
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="@dimen/small"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="@dimen/small"
+                        android:layout_weight="2"
+                        app:cardCornerRadius="3dp"
+                        app:cardElevation="2dp">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:paddingLeft="@dimen/small"
+                                android:paddingTop="@dimen/small"
+                                android:paddingRight="80dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/ralewaybold"
+                                    android:text="Consult with a doctor"
+                                    android:textColor="#363636"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:fontFamily="@font/ralewayregular"
+                                    android:text="Private chat with top doctors"
+                                    android:textColor="#363636"
+                                    android:textSize="12sp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <Space
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1" />
+
+                                <ImageView
+                                    android:layout_width="80dp"
+                                    android:layout_height="120dp"
+                                    android:scaleType="centerCrop"
+                                    android:paddingTop="@dimen/medium"
+                                    android:paddingLeft="@dimen/small"
+                                    android:layout_marginBottom="-7dp"
+                                    android:src="@drawable/doctor_call" />
+                            </LinearLayout>
+
+
+                        </RelativeLayout>
+                    </com.google.android.material.card.MaterialCardView>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/small">
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:fontFamily="@font/ralewaybold"
+                android:paddingLeft="@dimen/medium"
+                android:paddingTop="@dimen/medium"
+                android:paddingRight="@dimen/medium"
+                android:text="Find doctors in top specialities"
+                android:textColor="#363636"
+                android:textSize="14sp" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/medium"
+                    android:paddingTop="5dp"
+                    android:paddingRight="@dimen/medium">
+                    <!---->
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/small"
+                        app:cardBackgroundColor="@color/white"
+                        app:cardCornerRadius="3dp"
+                        app:cardElevation="2dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:paddingTop="@dimen/medium">
+
+                            <ImageView
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:layout_marginLeft="@dimen/small"
+                                android:layout_marginRight="@dimen/small"
+                                android:background="@drawable/circle"
+                                android:padding="10dp"
+                                android:src="@drawable/stethoscope" />
+                            <!--Line-->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0.7dp"
+                                android:layout_marginTop="10dp"
+                                android:background="#C0C0C0" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/medium"
+                                android:layout_marginRight="@dimen/medium"
+                                android:fontFamily="@font/ralewaybold"
+                                android:gravity="left"
+                                android:paddingTop="@dimen/small"
+                                android:paddingBottom="@dimen/medium"
+                                android:text="Homoeopath"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+                    <!---->
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/small"
+                        app:cardBackgroundColor="@color/white"
+                        app:cardCornerRadius="3dp"
+                        app:cardElevation="2dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:paddingTop="@dimen/medium">
+
+                            <ImageView
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:layout_marginLeft="@dimen/small"
+                                android:layout_marginRight="@dimen/small"
+                                android:background="@drawable/circle"
+                                android:padding="10dp"
+                                android:src="@drawable/stethoscope" />
+                            <!--Line-->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0.7dp"
+                                android:layout_marginTop="10dp"
+                                android:background="#C0C0C0" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/medium"
+                                android:layout_marginRight="@dimen/medium"
+                                android:fontFamily="@font/ralewaybold"
+                                android:gravity="left"
+                                android:paddingTop="@dimen/small"
+                                android:paddingBottom="@dimen/medium"
+                                android:text="Homoeopath"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+                    <!---->
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/small"
+                        app:cardBackgroundColor="@color/white"
+                        app:cardCornerRadius="3dp"
+                        app:cardElevation="2dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:paddingTop="@dimen/medium">
+
+                            <ImageView
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:layout_marginLeft="@dimen/small"
+                                android:layout_marginRight="@dimen/small"
+                                android:background="@drawable/circle"
+                                android:padding="10dp"
+                                android:src="@drawable/stethoscope" />
+                            <!--Line-->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0.7dp"
+                                android:layout_marginTop="10dp"
+                                android:background="#C0C0C0" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/medium"
+                                android:layout_marginRight="@dimen/medium"
+                                android:fontFamily="@font/ralewaybold"
+                                android:gravity="left"
+                                android:paddingTop="@dimen/small"
+                                android:paddingBottom="@dimen/medium"
+                                android:text="Homoeopath"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+                    <!---->
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/small"
+                        app:cardBackgroundColor="@color/white"
+                        app:cardCornerRadius="3dp"
+                        app:cardElevation="2dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:paddingTop="@dimen/medium">
+
+                            <ImageView
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:layout_marginLeft="@dimen/small"
+                                android:layout_marginRight="@dimen/small"
+                                android:background="@drawable/circle"
+                                android:padding="10dp"
+                                android:src="@drawable/stethoscope" />
+                            <!--Line-->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0.7dp"
+                                android:layout_marginTop="10dp"
+                                android:background="#C0C0C0" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/medium"
+                                android:layout_marginRight="@dimen/medium"
+                                android:fontFamily="@font/ralewaybold"
+                                android:gravity="left"
+                                android:paddingTop="@dimen/small"
+                                android:paddingBottom="@dimen/medium"
+                                android:text="Homoeopath"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+                    <!---->
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/small"
+                        app:cardBackgroundColor="@color/white"
+                        app:cardCornerRadius="3dp"
+                        app:cardElevation="2dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:paddingTop="@dimen/medium">
+
+                            <ImageView
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:layout_marginLeft="@dimen/small"
+                                android:layout_marginRight="@dimen/small"
+                                android:background="@drawable/circle"
+                                android:padding="10dp"
+                                android:src="@drawable/stethoscope" />
+                            <!--Line-->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0.7dp"
+                                android:layout_marginTop="10dp"
+                                android:background="#C0C0C0" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/medium"
+                                android:layout_marginRight="@dimen/medium"
+                                android:fontFamily="@font/ralewaybold"
+                                android:gravity="left"
+                                android:paddingTop="@dimen/small"
+                                android:paddingBottom="@dimen/medium"
+                                android:text="Homoeopath"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+                    <!---->
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/small"
+                        app:cardBackgroundColor="@color/white"
+                        app:cardCornerRadius="3dp"
+                        app:cardElevation="2dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:paddingTop="@dimen/medium">
+
+                            <ImageView
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:layout_marginLeft="@dimen/small"
+                                android:layout_marginRight="@dimen/small"
+                                android:background="@drawable/circle"
+                                android:padding="10dp"
+                                android:src="@drawable/stethoscope" />
+                            <!--Line-->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0.7dp"
+                                android:layout_marginTop="10dp"
+                                android:background="#C0C0C0" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/medium"
+                                android:layout_marginRight="@dimen/medium"
+                                android:fontFamily="@font/ralewaybold"
+                                android:gravity="left"
+                                android:paddingTop="@dimen/small"
+                                android:paddingBottom="@dimen/medium"
+                                android:text="Homoeopath"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+                    <!---->
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/small"
+                        app:cardBackgroundColor="@color/white"
+                        app:cardCornerRadius="3dp"
+                        app:cardElevation="2dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:paddingTop="@dimen/medium">
+
+                            <ImageView
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:layout_marginLeft="@dimen/small"
+                                android:layout_marginRight="@dimen/small"
+                                android:background="@drawable/circle"
+                                android:padding="10dp"
+                                android:src="@drawable/stethoscope" />
+                            <!--Line-->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0.7dp"
+                                android:layout_marginTop="10dp"
+                                android:background="#C0C0C0" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/medium"
+                                android:layout_marginRight="@dimen/medium"
+                                android:fontFamily="@font/ralewaybold"
+                                android:gravity="left"
+                                android:paddingTop="@dimen/small"
+                                android:paddingBottom="@dimen/medium"
+                                android:text="Homoeopath"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+                    <!---->
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/small"
+                        app:cardBackgroundColor="@color/white"
+                        app:cardCornerRadius="3dp"
+                        app:cardElevation="2dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:paddingTop="@dimen/medium">
+
+                            <ImageView
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:layout_marginLeft="@dimen/small"
+                                android:layout_marginRight="@dimen/small"
+                                android:background="@drawable/circle"
+                                android:padding="10dp"
+                                android:src="@drawable/stethoscope" />
+                            <!--Line-->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0.7dp"
+                                android:layout_marginTop="10dp"
+                                android:background="#C0C0C0" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/medium"
+                                android:layout_marginRight="@dimen/medium"
+                                android:fontFamily="@font/ralewaybold"
+                                android:gravity="left"
+                                android:paddingTop="@dimen/small"
+                                android:paddingBottom="@dimen/medium"
+                                android:text="Homoeopath"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+                    <!---->
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/small"
+                        app:cardBackgroundColor="@color/white"
+                        app:cardCornerRadius="3dp"
+                        app:cardElevation="2dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:paddingTop="@dimen/medium">
+
+                            <ImageView
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:layout_marginLeft="@dimen/small"
+                                android:layout_marginRight="@dimen/small"
+                                android:background="@drawable/circle"
+                                android:padding="10dp"
+                                android:src="@drawable/stethoscope" />
+                            <!--Line-->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0.7dp"
+                                android:layout_marginTop="10dp"
+                                android:background="#C0C0C0" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/medium"
+                                android:layout_marginRight="@dimen/medium"
+                                android:fontFamily="@font/ralewaybold"
+                                android:gravity="left"
+                                android:paddingTop="@dimen/small"
+                                android:paddingBottom="@dimen/medium"
+                                android:text="Homoeopath"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/small"
+                android:layout_marginRight="5dp"
+                android:paddingRight="@dimen/medium">
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/ralewaybold"
+                    android:text="View All"
+                    android:textColor="@color/light_blue"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <!--Explore HelathCare-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:fontFamily="@font/ralewaybold"
+                android:paddingLeft="@dimen/medium"
+                android:paddingTop="@dimen/medium"
+                android:paddingRight="@dimen/medium"
+                android:text="Explore healthcare"
+                android:textColor="#363636"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/medium"
+                android:paddingTop="5dp"
+                android:paddingRight="@dimen/medium">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:orientation="vertical">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="@dimen/small"
+                        android:paddingLeft="@dimen/small"
+                        app:cardCornerRadius="3dp"
+                        app:cardElevation="2dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:padding="@dimen/small"
+                                android:paddingTop="@dimen/small"
+                                android:paddingBottom="@dimen/small">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/ralewaybold"
+                                        android:text="Premium Healthcare "
+                                        android:textColor="#363636"
+                                        android:textSize="14sp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/ralewaybold"
+                                        android:text="Membership"
+                                        android:textColor="#363636"
+                                        android:textSize="14sp" />
+
+
+                                </LinearLayout>
+
+                                <ImageView
+                                    android:layout_width="24dp"
+                                    android:layout_height="24dp"
+                                    android:layout_marginLeft="@dimen/medium"
+                                    android:padding="2dp"
+                                    android:src="@drawable/ic_keyboard_arrow_right_black_24dp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical"
+                                android:padding="@dimen/small"
+                                android:paddingTop="@dimen/small"
+                                android:paddingBottom="@dimen/small">
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/medium"
+                                    android:fontFamily="@font/ralewaybold"
+                                    android:padding="2dp"
+                                    android:text="Practo"
+                                    android:textSize="18sp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="3dp"
+                                    android:background="@drawable/violet_rectangle"
+                                    android:fontFamily="@font/ralewaybold"
+                                    android:paddingLeft="@dimen/small"
+                                    android:paddingTop="3dp"
+                                    android:paddingRight="@dimen/small"
+                                    android:paddingBottom="3dp"
+                                    android:text="Plus"
+                                    android:textAllCaps="true"
+                                    android:textColor="@color/white"
+                                    android:textSize="18sp" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:orientation="vertical">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="@dimen/small"
+                        android:paddingLeft="@dimen/small"
+                        app:cardCornerRadius="3dp"
+                        app:cardElevation="2dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="@dimen/small"
+                            android:paddingTop="@dimen/small">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:paddingBottom="@dimen/small">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/ralewaybold"
+                                    android:text="Book a prime"
+                                    android:textColor="#363636"
+                                    android:textSize="14sp" />
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/ralewaybold"
+                                        android:text="doctor"
+                                        android:textColor="#363636"
+                                        android:textSize="14sp" />
+
+                                    <ImageView
+                                        android:layout_width="24dp"
+                                        android:layout_height="24dp"
+                                        android:layout_marginLeft="@dimen/small"
+                                        android:padding="2dp"
+                                        android:src="@drawable/ic_keyboard_arrow_right_black_24dp" />
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+                            <Space
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1" />
+
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_gravity="bottom"
+                                android:layout_marginRight="-7dp"
+                                android:layout_marginBottom="2dp"
+                                android:padding="2dp"
+                                android:src="@drawable/prime" />
+                        </LinearLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="@dimen/small"
+                        android:paddingLeft="@dimen/small"
+                        app:cardCornerRadius="3dp"
+                        app:cardElevation="2dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="@dimen/small"
+                            android:paddingTop="@dimen/small">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:paddingBottom="@dimen/small">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/ralewaybold"
+                                    android:text="Book a prime"
+                                    android:textColor="#363636"
+                                    android:textSize="14sp" />
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/ralewaybold"
+                                        android:text="doctor"
+                                        android:textColor="#363636"
+                                        android:textSize="14sp" />
+
+                                    <ImageView
+                                        android:layout_width="24dp"
+                                        android:layout_height="24dp"
+                                        android:layout_marginLeft="@dimen/small"
+                                        android:padding="2dp"
+                                        android:src="@drawable/ic_keyboard_arrow_right_black_24dp" />
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+                            <Space
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1" />
+
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_gravity="bottom|end"
+                                android:padding="2dp"
+                                android:src="@drawable/usingphone" />
+                        </LinearLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <!--Chat with top doctor-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:fontFamily="@font/ralewaybold"
+                android:paddingLeft="@dimen/medium"
+                android:paddingTop="@dimen/medium"
+                android:paddingRight="@dimen/medium"
+                android:text="Chat with top doctor"
+                android:textColor="#363636"
+                android:textSize="16sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:fontFamily="@font/ralewayregular"
+                android:layout_marginTop="3dp"
+                android:paddingLeft="@dimen/medium"
+                android:paddingRight="@dimen/medium"
+                android:text="Private online consults with experienced doctors"
+                android:textColor="#868585"
+                android:textSize="14sp" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/medium"
+                    android:paddingTop="5dp"
+                    android:paddingRight="@dimen/medium">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="150dp"
+                        android:layout_margin="@dimen/small"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="3dp"
+                        app:cardElevation="2dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="150dp"
+                                android:layout_height="100dp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/acne_img"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/ralewaybold"
+                                android:text="Pregnancy or periods doubts?"
+                                android:textColor="#363636"
+                                android:paddingLeft="@dimen/medium"
+                                android:paddingTop="@dimen/medium"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:paddingLeft="@dimen/medium"
+                                android:paddingRight="@dimen/medium"
+                                android:fontFamily="@font/ralewayregular"
+                                android:text="Gynaecology"
+                                android:textColor="#363636"
+                                android:textSize="12sp" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/ralewaybold"
+                                android:text="Chat now"
+                                android:textColor="@color/light_blue"
+                                android:paddingLeft="@dimen/medium"
+                                android:paddingTop="@dimen/small"
+                                android:paddingBottom="10dp"
+                                android:textSize="14sp" />
+
+                        </LinearLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="150dp"
+                        android:layout_margin="@dimen/small"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="3dp"
+                        app:cardElevation="2dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="150dp"
+                                android:layout_height="100dp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/acne_img"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/ralewaybold"
+                                android:text="Pregnancy or periods doubts?"
+                                android:textColor="#363636"
+                                android:paddingLeft="@dimen/medium"
+                                android:paddingTop="@dimen/medium"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:paddingLeft="@dimen/medium"
+                                android:paddingRight="@dimen/medium"
+                                android:fontFamily="@font/ralewayregular"
+                                android:text="Gynaecology"
+                                android:textColor="#363636"
+                                android:textSize="12sp" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/ralewaybold"
+                                android:text="Chat now"
+                                android:textColor="@color/light_blue"
+                                android:paddingLeft="@dimen/medium"
+                                android:paddingTop="@dimen/small"
+                                android:paddingBottom="10dp"
+                                android:textSize="14sp" />
+
+                        </LinearLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="150dp"
+                        android:layout_margin="@dimen/small"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="3dp"
+                        app:cardElevation="2dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="150dp"
+                                android:layout_height="100dp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/acne_img"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/ralewaybold"
+                                android:text="Pregnancy or periods doubts?"
+                                android:textColor="#363636"
+                                android:paddingLeft="@dimen/medium"
+                                android:paddingTop="@dimen/medium"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:paddingLeft="@dimen/medium"
+                                android:paddingRight="@dimen/medium"
+                                android:fontFamily="@font/ralewayregular"
+                                android:text="Gynaecology"
+                                android:textColor="#363636"
+                                android:textSize="12sp" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/ralewaybold"
+                                android:text="Chat now"
+                                android:textColor="@color/light_blue"
+                                android:paddingLeft="@dimen/medium"
+                                android:paddingTop="@dimen/small"
+                                android:paddingBottom="10dp"
+                                android:textSize="14sp" />
+
+                        </LinearLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
